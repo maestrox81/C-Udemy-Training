@@ -1,32 +1,43 @@
-# Prerequisites
-*.d
+/*-Franks carpet cleaning service estimate
+    charges $25 per small  room
+    charges $35 per large  room
+     Sales tax rate 6%
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+    Estimates are valid for 30 days
 
-# Precompiled Headers
-*.gch
-*.pch
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
 
-# Fortran module files
-*.mod
-*.smod
+#include <iostream>
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
+using namespace std;
 
-# Executables
-*.exe
-*.out
-*.app
+int main() {
+    
+    int number_of_rooms;
+    int charge_per_room {30};
+    float tax_rate {0.06};
+cout << endl;   
+cout << "Welcome to Rene's Carpet Cleaning Service" << endl;
+cout << endl;
+cout << "============================================== " << endl;
+cout << endl;
+cout << "How many rooms do you want to get cleaned?" << endl;        
+cin >> number_of_rooms;
+cout << endl;
+cout << "Price per room: $" << charge_per_room << endl; 
+cout << endl;
+cout << "Your estimated costs for " << number_of_rooms <<" room(s) is: $" << number_of_rooms * charge_per_room  << endl;
+cout << endl;
+cout << "Tax: $ "<< number_of_rooms*charge_per_room*tax_rate <<endl;
+cout << endl;
+cout << "============================================== " << endl;
+cout << endl;
+cout << "Total estimate: $ "<< number_of_rooms*charge_per_room + number_of_rooms*charge_per_room*tax_rate  <<endl;
+cout << endl;
+cout << "This estimation is valid for 30 days!" << endl;
+cout << endl;
+cout << "============================================== " << endl;
+
+    return 0;
+    
+    
